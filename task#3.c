@@ -89,7 +89,6 @@ typedef struct list_node {
     struct list_node *next;
 } list_node_t;
 
-/* Алгоритм генератора из my_rand.c преподавателя */
 static uint32_t my_rand(uint32_t *seed) {
     *seed = (uint32_t)((uint64_t)*seed * UINT64_C(279470273) % UINT64_C(4294967291));
     return *seed;
